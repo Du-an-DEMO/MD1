@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản</title>
+</head>
+<body>
+<form>
+  <h2>Sở thích của bạn</h2>
+    <p>Họ và tên:
+        <input type="text" name="Firstname"/></p>
+    <p>Email:
+    <input type="text" name="email"/></p>
+    <table>
+        <tr>
+            <p><td >Sở thích:</td></p>
+            <td><input name="hobby" value="sport" type="checkbox"/>Thể thao</td>
+            <td><input name="bobby" value="music" type="checkbox"/>âm nhạc</td>
+            <td><input name="hobby" value="reading books" type="checkbox"/>đọc sách</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input name="hobby" value="surf the web" type="checkbox"/>Lướt web</td>
+            <td><input name="hobby" value="gaming" type="checkbox"/>Chơi game</td>
+            <td><input name="hobby" value="film" type="checkbox"/>Điện ảnh </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input name="hobby" value="travel" type="checkbox"/>Du lịch</td>
+        </tr>
+    </table>
+    <p><input type="submit" name="btsubmit" value="Gửi thông tin"/>
+    <input type="reset" value="Nhập lại"/>
+    </p>
+
+</form>
+<form>
+    <h2>Đăng kí học viên</h2>
+    <p>Họ và tên:
+        <input type="text" name="Firstname"/></p>
+    <p>Ngày sinh:
+        <input type="number" name="lastname"/></p>
+    <p>Giới tính:
+        <input type="radio" name="gt"/>Nam
+        <input type="radio" name="gt"/>Nữ</p>
+    <p>Địa chỉ:
+        <textarea name="dia chi" id="12" cols="30" rows="10"></textarea>
+        </textarea></p>
+    <p>Lớp:
+        <select>
+            <option>Lớp 1</option>
+            <option>Lớp 2</option>
+            <option>Lớp 3</option>
+            <option>Lớp 4</option>
+        </select></p>
+    <p>Email:
+        <input type="text" name="email"/></p>
+    <p>Điện thoại:
+        <input type="number" name="phone"/></p>
+    <p><input type="submit" name="btsubmit" value="Đăng kí"/>
+        <input type="reset" value="Nhập lại"/>
+    </p>
+</form>
+</body>
+</html>
