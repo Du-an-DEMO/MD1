@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+    <input type="text" id="so1">
+    <input type="text" id="so2"><br>
+    <button onclick="Addition()">Addition(+)</button>
+    <button onclick="Subtraction()">Subtraction(-)</button>
+    <button onclick="Multiplication()">Multiplication(x)</button>
+    <button onclick="Division()">Division(/)</button>
+    <p>kết quả:</p>
+     <p id = "result">hien thi ket qua</p>
+</body>
+</html>
+<script>
+    function Addition(){
+        let inputso1 = document.getElementById('so1').value;
+        let inputso2 = document.getElementById('so2').value;
+        let so1 = parseInt(inputso1);
+        let so2 = parseInt(inputso2);
+        let result = so1 + so2;
+        document.getElementById("result").innerHTML= result;
+    }
+    function Subtraction(){
+        let inputso1 = document.getElementById('so1').value;
+        let inputso2 = document.getElementById('so2').value;
+        let so1 = parseInt(inputso1);
+        let so2 = parseInt(inputso2);
+        let result = so1 - so2;
+        document.getElementById("result").innerHTML=result;
+    }
+    function Multiplication(){
+        let inputso1 = document.getElementById('so1').value;
+        let inputso2 = document.getElementById('so2').value;
+        let so1 = parseInt(inputso1);
+        let so2 = parseInt(inputso2);
+        let result = so1 * so2;
+        document.getElementById("result").innerHTML=result;
+    }
+    function Division(){
+        let inputso1 = document.getElementById('so1').value;
+        let inputso2 = document.getElementById('so2').value;
+        let so1 = parseInt(inputso1);
+        let so2 = parseInt(inputso2);
+        let result = so1 / so2;
+        document.getElementById("result").innerHTML=result;
+    }
+</script>
